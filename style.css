@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+:root {
+  --font: 'Poppins', sans-serif;
+  --color_background: #F0F2F4;
+  --color_letter: #566a7f;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: var(--font);
+  background-color: var(--color_background);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container-login {
+  background-color: white;
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  padding: 90px 100px;
+}
+
+.container-login h3 {
+  color: var(--color_letter);
+  font-size: 20px;
+  margin: 0;
+}
+
+.form-login {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  gap: 9px;
+}
+
+.form-login input[type='text'],
+.form-login input[type='password'] {
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 1px solid #D4D6D9;
+  font-size: 14px;
+  color: #697a8d;
+}
+
+.form-login input[type='submit'] {
+  width: 250px;
+  padding: 10px;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 14px;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 5px;
+  background: #6166F2;
+  border: none;
+  cursor: pointer;
+}
+
+.form-login input[type='submit']:hover {
+  background: rgb(89, 92, 235);
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    background: white;
+  }
+}
+
+.label-login {
+  color: blue;
+  text-align: center;
+}
+
+.label-error {
+  color: red;
+  text-align: center;
+}
